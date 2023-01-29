@@ -1,0 +1,38 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="root">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="row" minOccurs="1" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:all>
+							<xs:element name="idema" type="xs:string"></xs:element>
+							<xs:element name="lon" type="xs:decimal"></xs:element>
+							<xs:element name="fint" type="xs:dateTime"></xs:element>
+							<xs:element minOccurs="0" name="prec" type="xs:decimal"></xs:element>
+							<xs:element name="alt" type="xs:integer"></xs:element>
+							<xs:element minOccurs="0" name="vmax" type="xs:decimal"></xs:element>
+							<xs:element minOccurs="0" name="vv" type="xs:decimal"></xs:element>
+							<xs:element name="dv" type="xs:integer"></xs:element>
+							<xs:element name="lat" type="xs:decimal"></xs:element>
+							<xs:element name="dmax" type="xs:integer"></xs:element>
+							<xs:element name="ubi" type="xs:string"></xs:element>
+							<xs:element minOccurs="0" name="pres" type="xs:decimal"></xs:element>
+							<xs:element minOccurs="0" name="hr" type="xs:decimal"></xs:element>
+							<xs:element minOccurs="0" name="ts" type="xs:decimal"></xs:element>
+							<xs:element minOccurs="0" name="tamin" type="xs:decimal"></xs:element>
+							<xs:element minOccurs="0" name="ta" type="xs:decimal"></xs:element>
+							<xs:element minOccurs="0" name="tamax" type="xs:decimal"></xs:element>
+							<xs:element minOccurs="0" name="tpr" type="xs:decimal"></xs:element>
+							<xs:element minOccurs="0" name="vis" type="xs:integer"></xs:element>
+							<xs:element minOccurs="0" name="inso" type="xs:integer"></xs:element>
+							<xs:element minOccurs="0" name="tss5cm" type="xs:decimal"></xs:element>
+							<xs:element minOccurs="0" name="psoltp" type="xs:integer"></xs:element>
+							<xs:element minOccurs="0" name="pliqt" type="xs:decimal"></xs:element>
+							<xs:element minOccurs="0" name="geo925" type="xs:decimal"></xs:element>
+						</xs:all>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
